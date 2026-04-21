@@ -1,0 +1,284 @@
+:root{
+--text-color: #2c2c2c;
+--link-color: #007e62;
+--background-color: #ffffff; 
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a{
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+  
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--link-color);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+nav .right a:hover {
+  transform: scale(1.05);
+  background-color: var(--link-color);
+  border-radius: 5px;
+  padding: 2px 10px;
+  transition: 0.5s;
+}
+
+
+/* Sección de presentación */
+.presentacion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+
+}
+.presentacion .texto .links{
+  margin-top: 20px;
+}
+.presentacion .texto .links a{
+  color: var(--text-color);
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(143, 139, 139);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.06s;
+}
+.presentacion .texto .links a:hover{
+   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(27, 27, 27, 0.5);
+  background-color: var(--link-color);
+  transition: 0.5s;
+
+}
+.presentacion.texto{
+  flex: 5;
+}
+.presentacion .texto h2{
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.presentacion .selfie{
+  flex: 2;
+  display: flex;
+  justify-content: right;
+  
+}
+.presentacion .selfie img{
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* Sección de proyectos */
+.proyectos-H{
+  padding: 0 50px;
+  margin-bottom: 100px;
+
+}
+.proyectos-H h2{
+text-align: center;
+font-size: 35px;
+}
+.proyectos-H .textoproyectos{
+text-align: center;
+margin-bottom: 20px;
+font-size: 20px;
+}
+
+.proyectos-H .celdas{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.proyectos-H .celdas .celda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:  1.5px solid rgb(143, 139, 139);
+  border-radius: 5px;
+  margin: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  gap: 10px;
+}
+.proyectos-H .celdas .celda img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.proyectos-H .celdas .celda span{
+  font-size: 18px;
+}
+
+/* Contacto */
+
+.contactoS{
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contactoS h2{
+  font-size: 35px;
+ 
+}
+.contactoS .grupo{
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+.contactoS .grupo .textoG{
+  flex: 3;
+}
+
+.contactoS .grupo form{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactoS .grupo form input, .contactoS .grupo form textarea{
+  font-family: poppins, sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  resize: none;
+
+}
+.contactoS .grupo form button{
+  width: 100px;
+  padding: 10px;
+  background-color: var(--link-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  font-family: poppins, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contactoS .grupo form button:hover{
+   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(27, 27, 27, 0.5);
+  transition: 0.5s;
+
+}
+
+
+@media (max-width: 850px){ 
+/* Estilos para pantallas medianas */
+  .presentacion .texto h2{
+    font-size: 35px;
+  }
+}
+
+
+
+@media (max-width: 740px) {
+  /* Estilos para pantallas semipequeñas */
+
+  .presentacion {
+    flex-direction: column-reverse;
+  }
+.presentacion.selfie{
+  width: 300px;
+}
+/* Contacto */
+.contactoS .grupo{
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  /* Estilos para pantallas pequeñas */
+
+  nav{
+    padding: 0 20px;
+    display: flex;
+  }
+
+  nav .right a {
+    font-size: 22px;
+   
+  }
+
+  nav .right a span{
+    display: none;
+  }
+
+  nav .right a:last-child{
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0%;
+    display: inline;
+    }
+  .presentacion{
+    padding: 0 20px;
+    
+  }
+  .presentacion.texto h2{
+    font-size: 30px;
+  }
+
+  .proyectos-H{
+    padding: 0 20px;
+  }
+
+  .proyectos-H .celdas .celda{
+    size: 15px;
+  }
+
+}
+
+
+}
