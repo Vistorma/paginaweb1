@@ -104,8 +104,9 @@ nav .right a:hover {
   flex: 5;
 }
 .presentacion .texto h2{
-  font-size: 45px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .presentacion .selfie{
   flex: 2;
