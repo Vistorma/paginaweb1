@@ -32,6 +32,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url(coolbackgrounds-fractalize-ranger_made.png);
+  background-size:cover;
 
   padding: 0 50px;
   height: 80px;
