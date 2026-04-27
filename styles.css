@@ -1,6 +1,6 @@
 :root{
 --text-color: #2c2c2c;
---link-color: #007e62;
+--link-color: rgb(2, 128, 75);
 --background-color: #ffffff; 
 
 }
@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html{
@@ -20,6 +21,8 @@ body{
   background-color: var(--background-color);
   max-width: 1400px;
   margin: 0 auto;
+  
+
 }
 
 a{
@@ -32,6 +35,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url(coolbackgrounds-fractalize-ranger_made.png);
+  background-size:cover;
 
   padding: 0 50px;
   height: 80px;
@@ -77,6 +82,9 @@ nav .right a:hover {
   margin: 50px 0;
   margin-bottom: 100px;
   gap: 40px;
+  
+  
+  
 
 }
 .presentacion .texto .links{
@@ -116,7 +124,7 @@ nav .right a:hover {
 }
 .presentacion .selfie img{
   width: 300px;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 
 /* Sección de proyectos */
@@ -145,7 +153,7 @@ font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border:  1.5px solid rgb(143, 139, 139);
+  border: var(--link-color)  solid 2px;
   border-radius: 5px;
   margin: 10px;
   width: 200px;
@@ -157,6 +165,7 @@ font-size: 20px;
   height: 30px;
   object-fit: contain;
   border-radius: 2px;
+  
 }
 .proyectos-H .celdas .celda span{
   font-size: 18px;
@@ -215,6 +224,9 @@ font-size: 20px;
   transition: 0.5s;
 
 }
+
+
+
 
 
 @media (max-width: 850px){ 
