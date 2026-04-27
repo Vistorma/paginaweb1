@@ -147,7 +147,7 @@ font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border:  1.5px solid rgb(143, 139, 139);
+  border: var(--link-color)  solid 2px;
   border-radius: 5px;
   margin: 10px;
   width: 200px;
