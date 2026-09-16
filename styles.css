@@ -19,10 +19,14 @@ html{
 body{
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
-  max-width: 1500px;
   margin: 0 auto;
   
 
+}
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px; /* opcional: espacio en los laterales */
 }
 
 a{
