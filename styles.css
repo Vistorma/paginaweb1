@@ -1,6 +1,6 @@
 :root{
 --text-color: #2c2c2c;
---link-color: rgb(2, 128, 75);
+--link-color: rgb(45, 75, 0);
 --background-color: #ffffff; 
 
 }
@@ -117,7 +117,7 @@ nav .right a:hover {
   flex: 5;
 }
 .presentacion .texto h2{
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -184,7 +184,7 @@ font-size: 20px;
 }
 
 .contactoS h2{
-  font-size: 35px;
+  font-size: 25px;
  
 }
 .contactoS .grupo{
@@ -205,6 +205,7 @@ font-size: 20px;
 .contactoS .grupo form input, .contactoS .grupo form textarea{
   font-family: poppins, sans-serif;
   border: 2px solid var(--link-color);
+  border-radius: 5px;
   background-color: transparent;
   padding: 10px;
   margin-bottom: 20px;
@@ -236,21 +237,23 @@ font-size: 20px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: left;
 
 
 }
 .weatherApp{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   gap: 20px;
 }
 .cityInput{
   padding: 10px;
-  border: 2px solid var(--link-color);
+  border: 2px solid rgb(45, 75, 0);
   background-color: transparent;
+  border-radius: 5px;
   outline: none;
+  max-width: 280px;
   font-family: poppins, sans-serif;
 }
 #botonClima{
@@ -259,6 +262,7 @@ font-size: 20px;
   color: var(--background-color);
   border: none;
   border-radius: 5px;
+  max-width: 180px;
   font-family: poppins, sans-serif;
   font-weight: bold;
   cursor: pointer;
@@ -284,12 +288,12 @@ font-size: 20px;
   margin: 0;
 }
 
-
 .errorClima{
   color: rgb(0, 0, 0);
   font-weight: bold;
   margin-top: 10px;
 }
+
 
 /* Media Queries */
 
