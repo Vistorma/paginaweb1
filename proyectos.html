@@ -3,20 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Colección de mini proyectos web.">
+	<meta name="description" content="Colección proyectos web.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
-	<title>Mis mini proyectos</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>Proyectos</title>
 	<style>
 		:root {
 			--fondo: #ffffff;
-			--texto: #2c2c2c;
-			--muted: #667085;
-			--primario: rgb(45, 75, 0);
-			--blanco: #fff;
-			--borde: #e5e7ef;
+			--texto: #000000;
+			--muted: #0e0e0f;
+			--primario: rgb(37, 61, 1);
+			--blanco: #acacac;
+			--borde: #b8b8b8;
 		}
 
 		* { box-sizing: border-box; margin: 0; padding: 0; }
@@ -26,17 +28,8 @@
 			font-family: 'Poppins', sans-serif;
 			line-height: 1.5;
 		}
-		header {
-			background-image: url(coolbackgrounds-fractalize-ranger_made.png);
-			background-size: cover;
-			border-radius: 10px;
-			color: white;
-			padding: 72px 20px 90px;
-			text-align: center;
-		}
-		header p { color: var(--texto); margin-top: 12px; }
-		h1 { font-size: clamp(2.2rem, 6vw, 4rem); }
-		.contenedor { max-width: 1100px; margin: -42px auto 0; padding: 0 20px 60px; }
+		
+		.contenedor { max-width: 1100px; margin: 42px auto 0; padding: 0 20px 60px; }
 		.barra {
 			align-items: center;
 			background: var(--blanco);
@@ -56,14 +49,14 @@
 			background: var(--blanco);
 			border: 1px solid var(--borde);
 			border-radius: 18px;
-			box-shadow: 0 5px 18px #1720330b;
+			box-shadow: 0 5px 18px #0714300b;
 			display: flex;
 			flex-direction: column;
 			overflow: hidden;
 			transition: transform .2s, box-shadow .2s;
 		}
 		.tarjeta:hover { box-shadow: 0 14px 30px #17203318; transform: translateY(-5px); }
-		.visual { align-items: center; background: #eef0ff; display: flex; font-size: 3.7rem; height: 150px; justify-content: center; }
+		.visual { align-items: center; background: #0c3d1f; display: flex; font-size: 3.7rem; height: 150px; justify-content: center; }
 		.contenido { display: flex; flex: 1; flex-direction: column; padding: 22px; }
 		.etiqueta { color: var(--primario); font-size: .75rem; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; }
 		h2 { font-size: 1.35rem; margin: 7px 0; }
@@ -78,11 +71,28 @@
 	</style>
 </head>
 <body>
-	<header>
-		<h1>Proyectos</h1>
-        <a href="index.html" target="_parent" rel="noopener noreferrer">Volver a inicio</a>
+	<nav>
+    <div class="left">
+        <a href="/">Victor Manuel</a>
+    </div>
+    <div class="right">
+
+		<a href="https://app.notion.com/p/CV-DAM-Victor-Manuel-Almonte-21e1eb55f523834096d001d2a3bb49f6"  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-notion"></i><span>Notion</span></a>             
+
+
+        <a href="https://github.com/Vistorma" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>github</span></a>
+
+        <a href="https://www.linkedin.com/in/victor-manuel-almonte/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+
+		<a href="mailto:almonte.victor.icd@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+        
+		<a href="index.html" target="_parent" rel="noopener noreferrer"><i class="fa-solid fa-house"></i><span>Inicio</span></a>
 		
-	</header>
+    </div>
+
+    
+  
+</nav>
 
 	<main class="contenedor">
 		<div class="barra">
@@ -91,16 +101,16 @@
 		</div>
 
 		<section class="grid" aria-label="Lista de proyectos">
-			<!-- Duplica esta tarjeta para añadir nuevos proyectos -->
+			
 			<article class="tarjeta">
-				<div class="visual">☀️</div>
+				<div class="visual"></div>
 				<div class="contenido">
 					<span class="etiqueta">Aplicación web</span>
 					<h2>App del clima</h2>
-					<p>Consulta el clima actual de cualquier ciudad hecho con JS</p>
+					<p>Consulta el clima actual de cualquier ciudad hecho con JS,proyecto sencillo de integración de JavaScript a HTML</p>
 					<div class="botones">
-						<a class="boton principal" href="clima.html" target="visor-proyecto" rel="noopener noreferrer">Ver proyecto</a>
-						<a class="boton secundario" href="#">Código</a>
+						<a class="boton principal" href="clima.html" target="visor-proyecto" rel="noopener noreferrer">Ver proyecto y código</a>
+						
 					</div>
 				</div>
 			</article>
