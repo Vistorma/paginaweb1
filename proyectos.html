@@ -72,6 +72,7 @@
 		.boton { border-radius: 8px; font-size: .9rem; font-weight: bold; padding: 10px 15px; text-align: center; text-decoration: none; }
 		.principal { background: var(--primario); color: white; }
 		.secundario { border: 1px solid var(--borde); color: var(--texto); }
+		.visor { border: 1px solid var(--borde); border-radius: 18px; box-shadow: 0 5px 18px #1720330b; height: 650px; margin-top: 30px; width: 100%; }
 		footer { color: var(--muted); font-size: .9rem; padding: 0 20px 28px; text-align: center; }
 		@media (max-width: 500px) { .barra { align-items: flex-start; flex-direction: column; } }
 	</style>
@@ -98,7 +99,7 @@
 					<h2>App del clima</h2>
 					<p>Consulta el clima actual de cualquier ciudad hecho con JS</p>
 					<div class="botones">
-						<a class="boton principal" href="#">Ver proyecto</a>
+						<a class="boton principal" href="clima.html" target="visor-proyecto" rel="noopener noreferrer">Ver proyecto</a>
 						<a class="boton secundario" href="#">Código</a>
 					</div>
 				</div>
@@ -109,7 +110,7 @@
 				<div class="contenido">
 					<span class="etiqueta">Próximamente</span>
 					<h2>Nuevo proyecto</h2>
-					<p>Aquí puedes presentar tu siguiente mini proyecto y contar brevemente de qué trata.</p>
+					<p>En desarrollo</p>
 					<div class="botones">
 						<a class="boton principal" href="#">Ver proyecto</a>
 						<a class="boton secundario" href="#">Código</a>
@@ -117,6 +118,8 @@
 				</div>
 			</article>
 		</section>
+
+		<iframe class="visor" name="visor-proyecto" title="Proyecto seleccionado"></iframe>
 	</main>
 
 	<footer>Victor Manuel Almonte</footer>
